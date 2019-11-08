@@ -69,9 +69,9 @@ class InvoicePrinter extends tFPDF
         parent::__construct('P', 'mm', [$this->document['w'], $this->document['h']]);
 
         $this->AddFont('DejaVu','','DejaVuSansCondensed.ttf', true);
-        $this->AddFont('DejaVuB','B','DejaVuSansCondensed-Bold.ttf', true);
-        $this->AddFont('DejaVuI','I','DejaVuSansCondensed-Oblique.ttf', true);
-        $this->AddFont('DejaVuBI','BI','DejaVuSansCondensed-BoldOblique.ttf', true);
+        $this->AddFont('DejaVu','B','DejaVuSansCondensed-Bold.ttf', true);
+        $this->AddFont('DejaVu','I','DejaVuSansCondensed-Oblique.ttf', true);
+        $this->AddFont('DejaVu','BI','DejaVuSansCondensed-BoldOblique.ttf', true);
 
         $this->AliasNbPages();
         $this->SetMargins($this->margins['l'], $this->margins['t'], $this->margins['r']);
