@@ -33,8 +33,20 @@ might use it for payment or shipping information or any other content needed.
 
 ## Installation
 
-```bash
-composer require konekt/pdf-invoice
+In composer.json:
+
+```json
+{
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/mialy/pdf-invoice"
+        }
+    ],
+    "require": {
+        "konekt/pdf-invoice": "dev-master"
+    }
+}
 ```
 
 ## Examples
